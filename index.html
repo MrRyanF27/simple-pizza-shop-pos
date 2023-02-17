@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Shop</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="proj-img/pizzaLogo3.jpg" alt="">
+        <h1>Mr.Swabe's Pizza House</h1>
+    </header>
+    <div class="main">
+
+        <div class="menu">
+            <!-- <h1>MENU</h1> -->
+            <div>
+
+                <label>
+                    <input type="radio" name="pizza"  id="cheese">
+                    <img src="proj-img/cheesePizza.jpg" alt="pic">
+                </label>
+                <p>CHEESE 250</p>
+    
+                <label>
+                    <input type="radio" name="pizza"  id="chicken">
+                    <img src="proj-img/chickenP.jpg" alt="pic">
+                </label>
+                <p>CHICKEN 350</p>
+    
+                <label>
+                    <input type="radio" name="pizza"  id="hawaiian">
+                    <img src="proj-img/hawaiian.jpg" alt="pic">
+                </label>
+                <p>HAWAIIAN 300</p>
+
+            </div>
+            
+ 
+            <br>
+
+            <div>
+                <label>
+                    <input type="radio" name="pizza"  id="margherita">
+                    <img src="proj-img/margherita.jpg" alt="pic">
+                    <p>MARGHERITA 280</p>
+                </label>
+    
+                <label>
+                    <input type="radio" name="pizza"  id="mushroom">
+                    <img src="proj-img/MushroomP.jpg" alt="pic">
+                    <p>MUSHROOM 260</p>
+                </label>
+    
+                <label>
+                    <input type="radio" name="pizza"  id="pepperoni">
+                    <img src="proj-img/pepperoni.jpg" alt="pic">
+                    <p>PEPPERONI 275</p>
+                </label>
+    
+            </div>
+
+            
+            <br>
+
+            <div>
+                <label>
+                    <input type="radio" name="pizza" id="seafood">
+                    <img src="proj-img/seafoodp.jpg" alt="pic">
+                    <p>SEA FOOD 350</p>
+                </label>
+    
+                <label>
+                    <input type="radio" name="pizza"  id="sweet">
+                    <img src="proj-img/sweetp.jpg" alt="pic">
+                    <p>SWEET 230</p>
+                </label>
+    
+                <label>
+                    <input type="radio" name="pizza"  id="vegetarian">
+                    <img src="proj-img/vegetarian.jpg" alt="pic">
+                    <p>VEGETARIAN 260</p>
+                </label>
+            </div>
+
+           
+        </div>
+
+
+
+        <div class="compute-container">
+
+        
+
+
+        <div class="qty">
+             <p class="text">Quantity</p>
+            <input type="number"  id="qty" placeholder="0">
+        </div>
+
+        <div class="ct">
+            <p class="text">Cash Tendered</p>
+            <input type="number" name="cashTendered" id="cashT" placeholder="₱ ">
+        </div>
+
+        <div class="dicount-container">
+
+            <input type="radio" name="discount" value="" id="none">
+            <img src="./proj-img/noneSign.png" alt="">
+
+            <input type="radio" name="discount" value="" id="pwd">
+            <img src="./proj-img/pwd.png" alt="">
+
+            <input type="radio" name="discount" value="" id="sr">
+            <img src="./proj-img/senior.jpg" alt="">
+
+
+            
+        </div>
+
+        <div class="dcon">Discount <p id="discount-el" class="d"></p></div>
+
+        <button onclick="compute()">Compute</button>
+
+        <div class="dcon">Total <p id="total-el" class="d"></p></div>
+        <div class="dcon">Discounted Total <p id="DTotal-el" class="d"></p></div>
+        <div class="dcon">Change <p id="change-el" class="d"></p> </div>
+
+
+    </div>
+
+        
+        
+
+         
+        
+        
+        
+
+
+
+    </div>
+
+    <script src="pizza.js"></script>
+    
+</body>
+</html>
